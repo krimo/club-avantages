@@ -11,4 +11,5 @@
 |
  */
 
+Route::resource('gift', 'GiftController');
 Route::get('/', 'WelcomeController@index');
