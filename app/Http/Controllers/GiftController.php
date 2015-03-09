@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use \App\Gift;
 
 class GiftController extends Controller
 {
@@ -12,7 +13,7 @@ class GiftController extends Controller
      */
     public function index()
     {
-        return 'all gifts';
+        return Gift::all();
     }
 
     /**
@@ -43,7 +44,7 @@ class GiftController extends Controller
      */
     public function show($id)
     {
-        return 'gift #' . $id;
+        return Gift::find($id);
     }
 
     /**
